@@ -4,7 +4,7 @@ source venv/bin/activate
 echo "# -------------------"
 echo "# running nosetests"
 echo "# -------------------"
-nosetests -v tests --with-coverage
+nosetests --with-coverage --cover-package=app
 
 echo "# -------------------"
 echo "# pyflakes"
