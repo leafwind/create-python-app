@@ -6,9 +6,8 @@ from datetime import datetime
 
 
 def parse_args():
-    """ parse input args."""
-    parser = argparse.ArgumentParser(description='init_server')
-    parser.add_argument('-i', '--ini', type=str, required=True, help='ini filename')
+    parser = argparse.ArgumentParser(description='init')
+    parser.add_argument('-i', '--ini', type=str, required=False, help='ini filename')
     parser.add_argument('--dry-run', dest='dry_run', action='store_true')
     parser.add_argument('--no-dry-run', dest='dry_run', action='store_false')
     parser.set_defaults(dry_run=True)
