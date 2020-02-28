@@ -6,8 +6,20 @@ a dog food template repository for myself
 
 contains basic arguments and logging function
 
-### logging format
+### Logging Format
 
+[Tip: Use a Human-Readable Logging Format](https://reflectoring.io/logging-format/)
+- Highly human readable
+  - clearly distinguish the different information blocks at a glance
+  - know in which column to look for the information we’re currently searching
+- Which Information to Include
+  - Date & Time
+  - Logging level
+  - Logger name
+  - File name
+  - Line number
+  - The message itself
+- An example
 ```
 > python app/main.py 
 [INFO] 2020-02-28 21:40:04 | root |              main.py |  43 | dry run: True
