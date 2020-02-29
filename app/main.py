@@ -19,7 +19,7 @@ def parse_args():
 
 def set_logger(log_level):
     my_format = "[%(levelname).4s] %(asctime)s | %(name)s | " \
-                "%(filename)+20s | %(lineno)3s | %(message)s"
+                "%(lineno)3s | %(message)s"
     date_fmt = '%Y-%m-%d %H:%M:%S'
 
     if not os.path.isdir('logs'):
@@ -33,8 +33,9 @@ def set_logger(log_level):
     formatter = logging.Formatter(my_format, date_fmt)
     h = logging.StreamHandler(sys.stdout)
     h.setFormatter(formatter)
-    h.setLevel(log_level)
-    logging.getLogger().addHandler(h)
+    root_logger = logging.getLogger()
+    root_logger.addHandler(h)
+    root_logger.setLevel(log_level)
     return
 
 
