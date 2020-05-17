@@ -1,8 +1,7 @@
 import argparse
 import logging
-import os
-import sys
-from datetime import datetime
+
+from app.logger import set_logger
 
 
 def parse_args():
@@ -17,33 +16,10 @@ def parse_args():
     return parser.parse_args()
 
 
-def set_logger(log_level):
-    my_format = "[%(levelname).4s] %(asctime)s | %(name)s | " \
-                "%(lineno)3s | %(message)s"
-    date_fmt = '%Y-%m-%d %H:%M:%S'
-
-    if not os.path.isdir('logs'):
-        os.makedirs('logs', exist_ok=True)
-    date_str = datetime.strftime(datetime.utcnow(), '%Y%m%d')
-    logging.basicConfig(level=log_level,
-                        format=my_format,
-                        datefmt=date_fmt,
-                        filename=os.path.join('logs', f'log.{date_str}'))
-
-    formatter = logging.Formatter(my_format, date_fmt)
-    h = logging.StreamHandler(sys.stdout)
-    h.setFormatter(formatter)
-    root_logger = logging.getLogger()
-    root_logger.addHandler(h)
-    root_logger.setLevel(log_level)
-    return
-
-
 def main(args):
     set_logger(args.log_level)
-    logging.info(f'dry run: {args.dry_run}')
+    logging.getLogger(__name__).info(f'dry run: {args.dry_run}')
 
 
 if __name__ == '__main__':
     main(parse_args())
-
