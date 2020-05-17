@@ -33,6 +33,28 @@ contains basic arguments and logging function
 [INFO] 2020-02-28 21:40:04 | root |              main.py |  43 | dry run: True
 ```
 
+## `setup.py`
+
+### Write into `requirements.txt` (recommended)
+
+add this line in your `requirements.txt`:
+
+`git+ssh://github.com/leafwind/create-python-app.git@[tag_name]#egg=create-python-app`
+
+then
+
+`pip install -r requirements.txt`
+
+### directly install
+
+`pip install ssh://github.com/leafwind/create-python-app.git@[tag_name]#egg=create-python-app`
+
+### Uninstall
+
+`pip uninstall create-python-app`
+
+---
+
 ## build virtualenv first
 
 `./scripts/build_venv.sh`
