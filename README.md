@@ -2,6 +2,14 @@
 
 a dog food template repository for myself
 
+## Features
+
+- main with arguments
+- logging format
+- `Dockerfile` and shell script to make docker image
+- `setup.py` to make package
+
+
 ## main.py
 
 contains basic arguments and logging function
