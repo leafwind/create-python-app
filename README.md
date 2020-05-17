@@ -55,6 +55,18 @@ then
 
 ---
 
+## Docker usage
+
+### build
+
+`docker_build.sh`
+
+### run
+
+`docker_run.sh`
+
+---
+
 ## build virtualenv first
 
 `./scripts/build_venv.sh`
