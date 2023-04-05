@@ -35,8 +35,7 @@ contains basic arguments and logging function
 
 # Building package of your app
 
-This repo includes a `setup.py` script for you to build a package.
-
+This repo includes a `setup.py` script for others to install your app by Github URL.
 
 # How to use the built package?
 
