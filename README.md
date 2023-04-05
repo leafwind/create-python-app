@@ -33,25 +33,24 @@ contains basic arguments and logging function
 [INFO] 2020-02-28 21:40:04 | root |              main.py |  43 | dry run: True
 ```
 
-## `setup.py`
+# Building package of your app
 
-### Write into `requirements.txt` (recommended)
+This repo includes a `setup.py` script for you to build a package.
 
-add this line in your `requirements.txt`:
 
-`git+ssh://github.com/leafwind/create-python-app.git@[tag_name]#egg=create-python-app`
+# How to use the built package?
 
-then
+## Option1: Write into `requirements.txt`
 
-`pip install -r requirements.txt`
+1. Add this line in your `requirements.txt`:
+  - `git+ssh://github.com/leafwind/create-python-app.git@[tag_name]#egg=create-python-app`
+2. `pip install -r requirements.txt`
 
-### directly install
+## Option2: install via pip
 
-`pip install ssh://github.com/leafwind/create-python-app.git@[tag_name]#egg=create-python-app`
-
-### Uninstall
-
-`pip uninstall create-python-app`
+1. `pip install ssh://github.com/leafwind/create-python-app.git@[tag_name]#egg=create-python-app`
+2. Uninstall
+  - `pip uninstall create-python-app`
 
 ---
 
