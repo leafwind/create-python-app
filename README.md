@@ -1,10 +1,11 @@
 # python app starter
 
+A dog food template repository for myself
+
 # Building status
 
 ![main workflow](https://github.com/leafwind/create-python-app/actions/workflows/main.yml/badge.svg)
 
-a dog food template repository for myself
 
 ## Features
 
