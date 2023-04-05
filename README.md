@@ -70,3 +70,6 @@ then
 ## run check script before commit
 
 `./scripts/pre_commit_check.sh`
+
+check https://pre-commit.com/ to setup pre-commit hook.
+
