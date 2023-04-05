@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+pyflakes = "*"
+black = "*"
+pytest = "*"
+coverage = "*"
+
+[pipenv]
+# for packages that are prereleases (e.g., black)
+allow_prereleases = true
+
+[requires]
+python_version = "3.11.3"
+
+[scripts]
+lint = "pyflakes ."
+format = "black ."
+test = "python -m pytest"
