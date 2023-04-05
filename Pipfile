@@ -16,9 +16,10 @@ coverage = "*"
 allow_prereleases = true
 
 [requires]
-python_version = "3.11.3"
+python_version = "3.11.1"
 
 [scripts]
-lint = "pyflakes ."
-format = "black ."
+lint = "pyflakes app/ tests/"
+format = "black . -l 120"
+check_format = "black . -l 120 --check"
 test = "python -m pytest"

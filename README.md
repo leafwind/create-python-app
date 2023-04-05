@@ -7,6 +7,23 @@ A dog food template repository for myself
 ![main workflow](https://github.com/leafwind/create-python-app/actions/workflows/main.yml/badge.svg)
 
 
+## Setup Python Runtime
+
+```sh
+pyenv install 3.9.1
+pyenv rehash  # optional; make sure right runtime is loaded
+
+pip install pipenv
+```
+
+## Setup Python Dependencies
+
+```sh
+# --dev includes dev depedencies
+pipenv install --dev
+```
+
+
 ## Features
 
 - main with arguments

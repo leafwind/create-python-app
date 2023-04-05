@@ -13,7 +13,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/leafwind/create-python-app",
     packages=setuptools.find_packages(),
-    python_requires='>=3.7',
-    install_requires=[
-    ],
+    python_requires=">=3.7",
+    install_requires=[],
 )
