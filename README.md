@@ -1,4 +1,8 @@
-# python app starter ![example workflow](https://github.com/leafwind/create-python-app/actions/workflows/main.yml/badge.svg)
+# python app starter
+
+# Building status
+
+![main workflow](https://github.com/leafwind/create-python-app/actions/workflows/main.yml/badge.svg)
 
 a dog food template repository for myself
 
