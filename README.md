@@ -67,10 +67,6 @@ then
 
 ---
 
-## build virtualenv first
-
-`./scripts/build_venv.sh`
-
 ## run check script before commit
 
 `./scripts/pre_commit_check.sh`
