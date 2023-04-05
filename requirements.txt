@@ -1,4 +1,0 @@
-pyflakes
-black
-pytest
-coverage
