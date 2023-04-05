@@ -1,4 +1,4 @@
-# python app starter [![Build Status](https://travis-ci.org/leafwind/create-python-app.svg?branch=master)](https://travis-ci.org/leafwind/create-python-app) [![Coverage Status](https://coveralls.io/repos/github/leafwind/create-python-app/badge.svg?branch=master)](https://coveralls.io/github/leafwind/create-python-app?branch=master)
+# python app starter ![example workflow](https://github.com/leafwind/create-python-app/actions/workflows/main.yml/badge.svg)
 
 a dog food template repository for myself
 
