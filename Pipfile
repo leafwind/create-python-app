@@ -9,7 +9,7 @@ name = "pypi"
 pyflakes = "*"
 black = "*"
 pytest = "*"
-coverage = "*"
+pytest-cov = "*"
 
 [pipenv]
 # for packages that are prereleases (e.g., black)
@@ -23,3 +23,4 @@ lint = "pyflakes app/ tests/"
 format = "black . -l 120"
 check_format = "black . -l 120 --check"
 test = "python -m pytest"
+coverage = "python -m pytest --cov"
