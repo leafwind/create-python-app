@@ -7,9 +7,10 @@ name = "pypi"
 
 [dev-packages]
 pyflakes = "*"
-black = "*"
+black = ">=24.3.0"
 pytest = "*"
 pytest-cov = "*"
+pipdeptree = "*"
 
 [pipenv]
 # for packages that are prereleases (e.g., black)
